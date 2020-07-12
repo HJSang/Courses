@@ -1,0 +1,5 @@
+Note that some of these will not involve any piping. 
+They are, however, all commands that are good to know for pipelines. 
+Most of these are commands that you have not seen before, 
+but they're all small and should have good man pages (or you can use Google).
+The name of the point is the name of the command that you will need to use (ie, head and tail are two commands).
