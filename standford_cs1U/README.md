@@ -57,4 +57,42 @@
     ```
     cat pumpkinsizes | tr -d  '|' | tail -11 | sort -k 7,6
     ```
-    - ``uniq``:  
+    - ``uniq``: -d: Only output lines that are repeated in the input; -c: count
+    - ``cut``:  cutting out the sections from each line of files and writing the result to standard output
+      ```
+      List without ranges
+    $ cut -b 1,2,3 state.txt
+    And
+    Aru
+    Ass
+    Bih
+    Chh
+
+    List with ranges
+    $ cut -b 1-3,5-7 state.txt
+    Andra
+    Aruach
+    Assm
+    Bihr
+    Chhtti
+    ```
+    - ``-c``: To cut by character use the -c option. 
+    ```
+    cut -c [(k)-(n)/(k),(n)/(n)] filename
+    cut -c 2,5,7 state.txt
+    ```
+    - ``join``: The join command in UNIX is a command line utility for joining lines of two files on a common field.
+      - ``join [OPTION] FILE1 FILE2``
+      - by default join command takes the first column as the key to join as in the above case
+    - ``sed``: SED command in UNIX is stands for stream editor and it can perform lot’s of function on file like, searching, find and replace, insertion or deletion.
+      - Replacing or substituting string: The below simple sed command replaces the word “unix” with “linux” in the file. ``sed 's/unix/linux/' geekfile.txt``.
+      - Replacing the nth occurrence of a pattern in a line: ``sed 's/unix/linux/2' geekfile.txt``
+      - Replacing all the occurrence of the pattern in a line: ``sed 's/unix/linux/g' geekfile.txt``
+      - Replacing from nth occurrence to all occurrences in a line: ``sed 's/unix/linux/3g' geekfile.txt``
+      - Parenthesize first character of each word: ``echo "Welcome To The Geek Stuff" | sed 's/\(\b[A-Z]\)/\(\1\)/g'``
+      - Replacing string on a specific line number: ``sed '3 s/unix/linux/' geekfile.txt``
+      - Duplicating the replaced line with /p flag: ``sed 's/unix/linux/p' geekfile.txt``
+      - Printing only the replaced lines: ``sed -n 's/unix/linux/p' geekfile.txt``
+      - Replacing string on a range of lines : ``sed '1,3 s/unix/linux/' geekfile.txt``
+      - Deleting lines from a particular file: To Delete a particular line say n in this example: ``sed '5d' filename.txt``; To Delete line from range x to y:``sed '3,6d' filename.txt``; To Delete from nth to last line: ``sed '12,$d' filename.txt``;To Delete pattern matching line: ``sed '/abc/d' filename.txt``
+
