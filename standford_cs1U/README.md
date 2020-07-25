@@ -121,8 +121,9 @@
 * The important thing to remember is that diff uses certain special symbols and instructions that are required to make two files identical.
 * Special symbols are:
 
-  | symbol | meaning |
-  | a      | add     |
-  | c      | change  |
-  | d      | delete  |
+| symbol | meaning |
+| ------ | ------- |
+| a      | add     |
+| c      | change  |
+| d      | delete  |
 
