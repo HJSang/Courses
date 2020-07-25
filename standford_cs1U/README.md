@@ -114,3 +114,14 @@
     - RS: RS command stores the current record separator character. Since, by default, an input line is the input record, the default record separator character is a newline.
     - OFS: OFS command stores the output field separator, which separates the fields when Awk prints them. The default is a blank space. Whenever print has several parameters separated with commas, it will print the value of OFS in between each parameter.
     - ORS: ORS command stores the output record separator, which separates the output lines when Awk prints them. The default is a newline character. print automatically outputs the contents of ORS at the end of whatever it is given to print.
+
+
+# Grep and Regular Expressions
+* [diff](https://www.geeksforgeeks.org/diff-command-linux-examples/)
+* The important thing to remember is that diff uses certain special symbols and instructions that are required to make two files identical.
+* Special symbols are:
+  | symbol | meaning |
+  | a      | add     |
+  | c      | change  |
+  | d      | delete  |
+
