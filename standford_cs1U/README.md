@@ -127,3 +127,8 @@
 | c      | change  |
 | d      | delete  |
 
+* Syntax: `` diff [options] File1 File2 ``
+* **-c(context)**: To view differences in context mode, use the -c option
+* **-u(unified)**: To view differences in unified mode, use the -u option
+* `` diff -bB``: ignores white lines and blank space
+
