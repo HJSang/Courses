@@ -132,3 +132,33 @@
 * **-u(unified)**: To view differences in unified mode, use the -u option
 * `` diff -bB``: ignores white lines and blank space
 
+# find
+* Syntax:
+```
+find [where to start searching from]
+ [expression determines what to find] [-options] [what to find]
+```
+* Search a file with specific name:
+```
+find ./GFG -name sample.txt
+```
+* Search a file with pattern
+```
+find ./GFG -name *.txt
+```
+* How to find and delete a file with confirmation
+```
+find ./GFG -name sample.txt -exec rm -i {} \;
+```
+* Search for empty files and directories 
+```
+find ./GFG -empty
+```
+* Search for file with entered permissions
+```
+find ./GFG -perm 664
+```
+* Search text with multiple files
+```
+find ./ -type f -name "*.txt" -exec grep 'Greek' {}\;
+```
