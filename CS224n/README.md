@@ -49,3 +49,21 @@ See the following equations for more details.
 ![image](./imgs/rnn2.png)
 
 Hence, we can see that the carry-on update is to mix the previous carry-on and the current input. The current output is only derived from the current carry-on.
+
+![image](./imgs/rnn3.png)
+
+
+## RNN Loss and Perplxity
+
+The Loss function is the negative log likelihood of each sentence.
+
+![image](./imgs/rnn4.png)
+![image](./imgs/rnn5.png)
+
+
+
+
+
+
+
+
