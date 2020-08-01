@@ -41,3 +41,11 @@ The simplified model is:
 Recurrent Neural Networks (RNN) are capableof conditioning the model on all previous wordsin the corpus. See the following architecture.
 
 ![image](./imgs/rnn.png)
+
+Note that, at which step, there are two inputs and two outputs. The one input is the carry-on from the previous step, which is used to memoery the long-term dependence. Another input is the current word to update the latest information. The two outputs are the carry-on to the next step and the prediction of current step.
+
+See the following equations for more details.
+
+![image](./imgs/rnn2.png)
+
+Hence, we can see that the carry-on update is to mix the previous carry-on and the current input. The current output is only derived from the current carry-on.
