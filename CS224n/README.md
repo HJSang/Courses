@@ -20,8 +20,20 @@ Two main issues:
 # Window-based Neural Language Model
 
 This model learns a `distributed representation of words`, along with the probability function for word sequences expressed in terms of these representations.
-The model is ![image](./imgs/n_gramlm1.png).
-The architecture is ![image](./imgs/window_n_gram_2.png)
+The model is 
+
+![image](./imgs/n_gram_lm1.png).
+
+The architecture is 
+
+![image](./imgs/window_n_gram_2.png)
+
+Note that, we need to process the sentences into window based data. That is (w1,w2,w3) and the label is w4. For (w1,w2,w3), lookup the embedding matrix to construct x. Then fit to the nn model. 
+
+The simplified model is:
+
+![image](./imgs/n_gram_s1.png)
+
 
 
 
