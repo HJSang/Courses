@@ -8,3 +8,4 @@ Notes: This joint probablity model is to learn the frequency the sequence words.
 ## n-gram Language Models
 
 To compute the probabilities, the count of each n-gram could be compared against the frequency of each word.  This is called an n-gram Language Model. The following equations show the relationship for bigram and trigram models.
+![image](./imgs/bigram.png)
