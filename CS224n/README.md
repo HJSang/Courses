@@ -36,4 +36,8 @@ The simplified model is:
 
 
 
+# RNN
 
+Recurrent Neural Networks (RNN) are capableof conditioning the model on all previous wordsin the corpus. See the following architecture.
+
+![image](./imgs/rnn.png)
