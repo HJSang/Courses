@@ -60,6 +60,21 @@ The Loss function is the negative log likelihood of each sentence.
 ![image](./imgs/rnn4.png)
 ![image](./imgs/rnn5.png)
 
+RNNs have several advantages:
+* They can process input sequences of any length
+* The model size does not increase for longer input sequence lengths
+* Computation for step t can (in theory) use information from many setps back.
+* The same weights are applied to every timestep of the input, so there is symmetry in how inputs are processed.
+However, RNNs also have some disadvantages:
+* Computation is slow - because it is sequential, it cannot be parallelized.
+* In practice, it is difficult to access information from many steps back due to problems like vanlishing and exploding gradients
+
+The details of gradient valishing and exploring are in [lecture](http://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes05-LM_RNN.pdf)
+
+## Solution to the Exploring and Valishing Gradients
+
+* Gradient Clips
+* ReLU
 
 
 
