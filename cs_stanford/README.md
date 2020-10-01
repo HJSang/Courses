@@ -21,13 +21,14 @@
 
    - Induction to prove the valid of algorithm 
    - The master Theorem to show the complexity of recursive algorithms 
-   ``
+  
+  ```
    Suppose that a>=1, b>1, and d are constants (i.e. independent of n).
    Suppose T(n) = a * T(n/b) + O(n^d). The master theorem states:
    - if a=b^d, T(n) = O(n^d logn)
    - if a<b^d, T(n) = O(n^d)
    - if if a > b^d, T(n) = O(n^{log_b(a)})
-   ``
+   ```
 
 
 # CS229: Machine Learning
