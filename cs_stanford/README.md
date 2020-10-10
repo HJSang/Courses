@@ -48,6 +48,26 @@
     - Binary decision tree -> n! possible orderings -> the longest path has length at least log(n!) = O(nlogn)
     - Radix sort: a sorting algo for integers up to size M ( or more generally, for sorting strings)
 
+# CS166: Data Structure
+ - [Link](http://web.stanford.edu/class/cs166/)
+ - [The Range Minimum Query (RMQ) problem: part I](http://web.stanford.edu/class/cs166/lectures/00/Small00.pdf)
+
+
+# CS224U: NaturalLanguage Understanding
+ - [Link](http://web.stanford.edu/class/cs224u/)
+
 
 # CS229: Machine Learning
 - [link](http://cs229.stanford.edu/)
+
+# CS230: Deep Learning
+ - [Link](http://cs230.stanford.edu/syllabus/)
+
+ # CS231N: Convolutional Neural Networks for Visual Recog
+  - [Link](https://cs231n.github.io/)
+
+ # CS233: Geometric and Topological Data Analysis
+   - [Link](http://graphics.stanford.edu/courses/cs233-20-spring/)
+
+ # CS246: Mining Massive Data Sets
+   - [Link](http://web.stanford.edu/class/cs246/)
